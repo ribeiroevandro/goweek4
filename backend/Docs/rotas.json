@@ -1,0 +1,118 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-11-06T18:50:34.796Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_c1db59f8024047c9bf72b1b99b7bc1ae",
+			"created": 1541523537725,
+			"description": "",
+			"modified": 1541523537725,
+			"name": "GoWeek 4",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_056425136f2d47daaacf9b8d3053d27f",
+			"color": null,
+			"created": 1541523537769,
+			"data": {
+				"base_url": "http://localhost:4000"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1541523537769,
+			"modified": 1541529999481,
+			"name": "New Environment",
+			"parentId": "wrk_c1db59f8024047c9bf72b1b99b7bc1ae",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_d099de72aee44b3cac523f54682fe04e",
+			"cookies": [],
+			"created": 1541523537781,
+			"modified": 1541523537781,
+			"name": "Default Jar",
+			"parentId": "wrk_c1db59f8024047c9bf72b1b99b7bc1ae",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_5316a736411e4af0802be7dbdc4e54da",
+			"authentication": {},
+			"body": {},
+			"created": 1541523689709,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1541523689709,
+			"method": "GET",
+			"modified": 1541530199152,
+			"name": "Listar Tweets",
+			"parameters": [],
+			"parentId": "wrk_c1db59f8024047c9bf72b1b99b7bc1ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tweets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9a711f539b3248b2be9cf55f5ecabb1e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"author\": \"Rocketseat\",\n\t\"content\": \"Criando tweet durante a GoWeek 4, usando Node, Express, Socket.io, React e React Native\"\n}"
+			},
+			"created": 1541524054187,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8dc807ea669e41f7b90c9ecc00228bad",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541524054187,
+			"method": "POST",
+			"modified": 1541530201221,
+			"name": "Criar Tweets",
+			"parameters": [],
+			"parentId": "wrk_c1db59f8024047c9bf72b1b99b7bc1ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tweets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a67556b90fad4b74a3b86176052d3758",
+			"authentication": {},
+			"body": {},
+			"created": 1541525015603,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1541525015603,
+			"method": "POST",
+			"modified": 1541530210941,
+			"name": "Like",
+			"parameters": [],
+			"parentId": "wrk_c1db59f8024047c9bf72b1b99b7bc1ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/likes/",
+			"_type": "request"
+		}
+	]
+}
